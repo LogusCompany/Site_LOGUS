@@ -40,5 +40,4 @@ Este projeto está licenciado sob os termos da Licença [MIT](wikipedia.org/wiki
 ##  Integrantes do Projeto
 @PeehDrums - https://github.com/PeehDrums
 @GeCorreia4 - https://github.com/GeCorreia4
-@Juan Pablo - https://github.com/Jpzinn654
 @DevNunes7 - https://github.com/devnunes7
