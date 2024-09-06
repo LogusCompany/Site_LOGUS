@@ -38,6 +38,6 @@ Você pode visualizar o site da Logus Company [aqui](https://loguscompany.com.br
 Este projeto está licenciado sob os termos da Licença [MIT](wikipedia.org/wiki/Licença_MIT).
 
 ##  Integrantes do Projeto
-@PeehDrums - https://github.com/PeehDrums
-@GeCorreia4 - https://github.com/GeCorreia4
-@DevNunes7 - https://github.com/devnunes7
+@PeehDrums - https://github.com/PeehDrums <br>
+@GeCorreia4 - https://github.com/GeCorreia4 <br>
+@Gustavo-minatto - https://github.com/Gustavo-minatto
