@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
       mensagem.style.display = 'none';
       document.querySelector('.inicial').style.display = 'flex';
     }, 1000);
-  }, 5000);
+  }, 8000);
 });
 
 
@@ -80,4 +80,13 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     }, function (error) {
       alert('Ocorreu um erro ao enviar o e-mail: ' + JSON.stringify(error));
     });
+});
+
+
+const typed = new Typed('.mensagem-inicial', {
+  strings: ['Precisa de Software que Impulsione Seu Sucesso?'],
+  typeSpeed: 70,
+  backSpeed: 30,
+  cursorchar: '',
+  loop: true
 });
