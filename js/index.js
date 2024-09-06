@@ -85,8 +85,9 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
 
 const typed = new Typed('.mensagem-inicial', {
   strings: ['Precisa de Software que Impulsione Seu Sucesso?'],
-  typeSpeed: 70,
-  backSpeed: 30,
-  cursorchar: '',
-  loop: true
+  typeSpeed: 20,
+  backSpeed: 40,
+  backDelay: 2000,
+  loop: 0,
+  loopCount: 1,
 });
