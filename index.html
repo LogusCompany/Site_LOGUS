@@ -2,338 +2,360 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="icon" type="image/png" href="FIles/icon-logo.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Logus Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <title>Logus Company</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./js/index.js" type="module" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("TSBV_OzWz5cHDULSn");
+    })();
+  </script>
+
 </head>
 
 <body>
-    <header>
-        <!-- Navbar-->
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" data-bs-theme="light">
-            <div class="container">
-                <!--Logo-->
-                <a class="navbar-brand" href="#">
-                    <img src="FIles/logus-logo-header.png" alt="Logo" class="img-fluid">
-                </a>
-                <button class="navbar-toggler b-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--Conteúdo -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">SOBRE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#equipe">EQUIPE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#serviços">SERVIÇOS</a>
-                        </li>
-                    </ul>
-                    <!--Contato Button-->
-                    <div class="navbar-nav ms-auto">
-                        <a class="btn btn-primary text-decoration-none rounded-pill" id="btn-ctt"
-                            href="#contato">CONTATO</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+  <div class="container">
+    <div class="mensagem-inicial">
+      <p>Precisa de Software que Impulsione Seu Sucesso?</p>
+    </div>
 
-        <section id="home" class="vh-100 d-flex align-items-center">
-            <div class="container">
-                <div class=" row row-cols-1 row-cols-lg-2 mx-auto d-flex align-items-center">
-                    <!--Texto Parte A-->
-                    <div class="col text-center text-lg-start">
-                        <img src="FIles/LogusLogo.png" alt="Logus Logo" class="img-fluid mb-3">
-                        <h1 class="text-uppercase">Logus Company</h1>
-                        <h4 class="w-75 text-uppercase mx-auto mx-lg-0">Desenvolvimento Completo para Suas Necessidades
-                        </h4>
-                        <div class="mt-3">
-                            <a class="btn btn-primary" id="btn-sobre" href="#sobre">Sobre</a>
-                            <a href="#contate-nos" class="btn" id="btn-email"><i
-                                    class="fa-regular fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <!--Imagem Parte B-->
-                    <div class="col d-flex align-items-center justify-content-center">
-                        <img src="FIles/Img1.png" class="img-fluid rounded w-50" id="img1" alt="Imagem de um notebook">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
+    <div class="inicial">
+      <img src="/assets/Logo.png" alt="Logus Company" class="logo">
+      <div class="scroll-indicator">
+        <svg id="scroll-icon" xmlns="http://www.w3.org/2000/svg" width="8em" height="8em" viewBox="0 0 1024 1024">
+          <path fill="white"
+            d="M831.872 340.864L512 652.672L192.128 340.864a30.59 30.59 0 0 0-42.752 0a29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728a30.59 30.59 0 0 0-42.752 0z" />
+        </svg>
+      </div>
+    </div>
 
-    <main>
-        <section id="sobre" class="vh-100 d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-lg-2 d-flex align-items-center">
-                    <!--Texto Parte A-->
-                    <div class="col d-flex justify-content-center">
-                        <img src="FIles/ParteA.png" class="img-fluid w-75" alt="Imagem Parte A">
-                    </div>
-                    <!--Imagem Parte B-->
-                    <div class="col p-3">
-                        <div>
-                            <h3>SOBRE NOSSA EMPRESA</h3>
-                        </div>
-                        <div>
-                            <h2>NOSSA EQUIPE OFERECE UM DOS MELHORES SERVIÇOS BRASILEIROS</h2>
-                        </div>
-                        <div>
-                            Descubra o melhor dos serviços brasileiros com a NOSSA EQUIPE e muito mais, estamos aqui
-                            para oferecer soluções excepcionais que superam suas expectativas.
-                        </div>
-                        <div class="d-flex pt-3 align-items-center">
-                            <div class="col-4">
-                                <img src="FIles/WomanChart.png" class="img-fluid rounded-top" alt="Imagem WomanChart">
-                            </div>
-                            <div class="col-8">
-                                <div>
-                                    <p><i class="bi bi-check2-square fs-5"></i> INOVAÇÃO CONSTANTE</p>
-                                </div>
-                                <div>
-                                    <p><i class="bi bi-check2-square fs-5"></i> AMBIENTE SAUDÁVEL</p>
-                                </div>
-                                <div>
-                                    <p><i class="bi bi-check2-square fs-5"></i> TECNOLOGIA DE PONTA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div id="target-section" class="services reveal">
+      <h1>Prontos para transformar suas necessidades em <br>soluções rápidas e eficazes!</h1>
+      <div class="service">
+        <div class="service-item">
+          <img src="/assets/manutencao.png" alt="Manutenção e Reparo de Softwares" class="services-foto">
+          <p>Manutenção e <br>Reparo de Softwares</p>
+          <p>Corrigir problemas, realizar atualizações e garantir que os softwares existentes funcionem de forma
+            eficiente e segura!</p>
+        </div>
+        <div class="service-item">
+          <img src="/assets/codigo.png" alt="Desenvolvimento de Software Personalizado" class="services-foto">
+          <p>Desenvolvimento de <br> Software Personalizado</p>
+          <p>Criar soluções de software desde o conceito até a implementação final, adaptadas às necessidades
+            específicas dos clientes!</p>
+        </div>
+        <div class="service-item">
+          <img src="/assets/consultoria.png" alt="Consultoria em Tecnologia e Estratégia Digital" class="services-foto">
+          <p>Consultoria em Tecnologia e <br> Estratégia Digital</p>
+          <p>Ajudar empresas a entender e implementar estratégias tecnológicas eficazes, alinhadas com seus objetivos de
+            negócios!</p>
+        </div>
+      </div>
+    </div>
 
-        <section id="equipe" class=" d-flex justify-content-center align-items-center">
-            <div class="container text-center">
+    <h2 class="paras">CRIANDO SOLUÇÕES PARA SEUS DESAFIOS! <br><span>NOSSOS PROJETOS EM AÇÃO</span></h2>
+    <div class="paralelogramo reveal">
+      <div class="area-lateral-esquerda">
+        <div class="area-a"><img src="/assets/centro.jpg" alt="Imagem 1"></div>
+        <div class="area-c"><img src="/assets/comerce.png" alt="Imagem 2"></div>
+        <div class="area-d"><img src="/assets/crm.png" alt="Imagem 3"></div>
+      </div>
+      <div class="area-principal">
+        <div class="area-b">
+          <div class="para-content one">
+            <h3>Landing Page</h3>
+            <p>Desenvolvemos uma Landing Page impactante para capturar a essência da marca e maximizar conversões.</p>
+            <ul>
+              <h4>Principais Caracteristicas:</h4>
+              <li><strong>Design Responsivo:</strong> Adapta-se a qualquer dispositivo, proporcionando uma experiência
+                uniforme.</li>
+              <li><strong>Mensagem Clara:</strong> Estrutura direta com chamadas para ação (CTAs) que guiam os
+                visitantes para a conversão.</li>
+              <li><strong>Elementos Interativos:</strong> Sliders, vídeos e animações para manter o engajamento.</li>
+              <li><strong>Otimização para Conversão:</strong> Técnicas de otimização e testes A/B para melhorar o
+                desempenho.</li>
+              <li><strong>Análise de Dados:</strong> Ferramentas integradas para monitorar e ajustar com base no
+                comportamento dos visitantes.</li>
+            </ul>
+            <h4>Resultados:</h4>
+            <p>A plataforma elevou as vendas, melhorou a experiência do cliente e contribuiu para o crescimento contínuo
+              da loja online.</p>
+            <h4>Tecnologias Utilizadas:</h4>
+            <p>HTML5, CSS3, JavaScript, Bootstrap 5</p>
+          </div>
 
-                <!-- Titulo -->
-                <div class="w-100 my-5">
-                    <h1>POR QUE ESCOLHER NOSSA EQUIPE?</h1>
-                </div>
+          <div class="para-content two hide">
+            <h3>E-Commerce</h3>
+            <p>Criamos uma plataforma de E-commerce sob medida, projetada para impulsionar vendas e oferecer uma
+              experiência de compra fluida e intuitiva.</p>
+            <ul>
+              <h4>Principais Caracteristicas:</h4>
 
-                <!-- Cards -->
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-                    <div class="col">
-                        <div class="card text-center text-uppercase h-100">
-                            <img src="FIles/arrowCloud.png" class="card-img-top img-fluid w-50 mx-auto"
-                                alt="arrow and cloud">
-                            <div class="card-body">
-                                <h5 class="card-title">Criação de Aplicativos Web e Móveis</h5>
-                                <p class="card-text">Desenvolvimento personalizado</p>
-                                <p class="card-text">Tecnologias de ponta</p>
-                                <p class="card-text">Interface intuitiva</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-center text-uppercase h-100">
-                            <img src="FIles/Cybersecurity.png" class="card-img-top img-fluid w-50 mx-auto"
-                                alt="Cybersecurity">
-                            <div class="card-body">
-                                <h5 class="card-title">Consultoria em TI e Automação de Processos</h5>
-                                <p class="card-text">Estratégias personalizadas</p>
-                                <p class="card-text">Automação que reduz custos</p>
-                                <p class="card-text">Suporte contínuo</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-center text-uppercase h-100">
-                            <img src="FIles/Computer.png" class="card-img-top img-fluid w-50 mx-auto" alt="Computer">
-                            <div class="card-body">
-                                <h5 class="card-title">Implementação de Sistemas e Suporte Técnico</h5>
-                                <p class="card-text">Especialistas certificados</p>
-                                <p class="card-text">Implementação rápida e eficiente</p>
-                                <p class="card-text">Suporte técnico dedicado</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <li><strong>Design Responsivo:</strong>Navegação perfeita em qualquer dispositivo, garantindo uma
+                experiência de compra consistente.</li>
+              <li><strong>Pagamentos Seguros: </strong> Integração com diversas opções de pagamento, proporcionando
+                segurança e flexibilidade.</li>
+              <li><strong>Gerenciamento de Produtos Simplificado:</strong> Painel de controle fácil de usar para
+                adicionar, editar e organizar produtos.</li>
+              <li><strong>SEO Otimizado:</strong> Técnicas de otimização e testes A/B para melhorar o
+                desempenho.</li>
+              <li><strong>Análise de Vendas:</strong> Ferramentas de monitoramento integradas para acompanhar o
+                desempenho e gerar insights valiosos.</li>
+            </ul>
+            <h4>Resultados:</h4>
+            <p>A plataforma elevou as vendas, melhorou a experiência do cliente e contribuiu para o crescimento contínuo
+              da loja online.</p>
+            <h4>Tecnologias Utilizadas:</h4>
+            <p>HTML5, CSS3, JavaScript, PHP, MySQL</p>
+          </div>
 
-                <!-- Botões desabilitados -->
-                <div class="d-flex flex-wrap justify-content-evenly align-items-center h-25 p-5">
-                    <div class="container-fluid row gx-3 d-flex justify-content-center align-items-center">
-                        <div class="col-lg-3 col-md-4 col-10 fake-btn d-flex flex-column justify-content-center align-items-center rounded-4 mb-2 mx-auto">
-                            <i class="bi bi-lightbulb fs-4"></i>
-                            <p class="fw-semibold text-center mb-0">PROJETOS</p>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-10 fake-btn d-flex flex-column justify-content-center align-items-center rounded-4 mb-2 mx-auto">
-                            <i class="bi bi-cloud-check fs-4"></i>
-                            <p class="fw-semibold text-center mb-0">CONSULTORIA</p>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-10 fake-btn d-flex flex-column justify-content-center align-items-center rounded-4 mx-auto">
-                            <i class="bi bi-laptop fs-4"></i>
-                            <p class="fw-semibold text-center mb-0">SUPORTE</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
+          <div class="para-content three hide">
+            <h3>CRM</h3>
+            <p>Criamos um sistema de CRM personalizado para ajudar pequenas empresas a gerenciar seus relacionamentos
+              com clientes de forma eficiente e organizada.</p>
+            <ul>
+              <h4>Principais Caracteristicas:</h4>
 
-        <section id="serviços" class="vh-auto d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class=" py-5">
-                    <h1 class="text-center">PROJETOS</h1>
-                </div>
+              <li><strong>Painel de Controle Intuitivo:</strong>Visualização centralizada de todas as interações com
+                clientes, facilitando o acompanhamento e a gestão.</li>
+              <li><strong>Automatização de Tarefas: </strong> Fluxos de trabalho automatizados para e-mails, follow-ups
+                e agendamento de reuniões.</li>
+              <li><strong>Relatórios Personalizados:</strong> Geração de relatórios detalhados para análise de vendas,
+                desempenho de equipe e satisfação do cliente.</li>
+              <li><strong>Integração com Ferramentas Existentes: </strong> Conectividade com e-mails, calendários e
+                outras ferramentas de produtividade.</li>
+            </ul>
+            <h4>Resultados:</h4>
+            <p>O CRM melhorou a retenção de clientes e aumentou a eficiência das operações, resultando em uma gestão de
+              relacionamento mais eficaz e em vendas mais consistentes.</p>
+            <h4>Tecnologias Utilizadas:</h4>
+            <p>PHP, Laravel, MySQL, Vue.js</p>
+          </div>
 
-                <!--Carrosel-->
+          <div class="para-content four hide">
+            <h3>Gerenciamento Financeiro</h3>
+            <p>Desenvolvemos o FinancialFlow, um sistema de gestão financeira completo que facilita o controle de
+              finanças pessoais e empresariais, permitindo decisões financeiras mais inteligentes.</p>
+            <ul>
+              <h4>Principais Caracteristicas:</h4>
+              <li><strong>Painel de Controle Unificado</strong> Visualização em tempo real de receitas, despesas e fluxo
+                de caixa, tudo em um único lugar.</li>
+              <li><strong>Planejamento Orçamentário:</strong> Ferramentas para criar, monitorar e ajustar orçamentos de
+                forma precisa e prática.</li>
+              <li><strong>Relatórios Personalizados:</strong> Geração de relatórios detalhados para análise de
+                tendências financeiras e desempenho.</li>
+              <li><strong>Alertas Automáticos:</strong> Notificações sobre prazos de pagamento, metas alcançadas e
+                anomalias financeiras. </li>
+            </ul>
+            <h4>Resultados:</h4>
+            <p>O FinancialFlow proporcionou uma gestão financeira mais clara e eficiente, ajudando usuários a otimizar
+              seus recursos e alcançar suas metas financeiras.</p>
+            <h4>Tecnologias Utilizadas:</h4>
+            <p>Python, Django, PostgreSQL, APIs Bancárias</p>
+          </div>
 
-                <div id="carouselExampleCaptions" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="FIles/logus-projetos-carrosel1.png" class="d-block w-100" alt="Imagem projetos">
-                            <div class="carousel-caption d-none d-md-block img-fluid">
-                                <h5>Logus Condominum</h5>
-                                <p>Em nossa empresa, dedicamo-nos a transformar ideias inovadoras em soluções reais que
-                                    impulsionam o sucesso dos nossos clientes. Cada projeto que desenvolvemos é único,
-                                    refletindo a paixão, a criatividade e a experiência da nossa equipe. Abaixo,
-                                    destacamos alguns dos nossos principais projetos, que exemplificam nosso compromisso
-                                    com a excelência e a inovação.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="FIles/logus-projetos-carrosel1.png" class="d-block w-100" alt="Imagem projetos">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Projetos</h5>
-                                <p>Em nossa empresa, dedicamo-nos a transformar ideias inovadoras em soluções reais que
-                                    impulsionam o sucesso dos nossos clientes. Cada projeto que desenvolvemos é único,
-                                    refletindo a paixão, a criatividade e a experiência da nossa equipe. Abaixo,
-                                    destacamos alguns dos nossos principais projetos, que exemplificam nosso compromisso
-                                    com a excelência e a inovação.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="FIles/logus-projetos-carrosel1.png" class="d-block w-100" alt="Imagem projetos">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Projetos</h5>
-                                <p>Em nossa empresa, dedicamo-nos a transformar ideias inovadoras em soluções reais que
-                                    impulsionam o sucesso dos nossos clientes. Cada projeto que desenvolvemos é único,
-                                    refletindo a paixão, a criatividade e a experiência da nossa equipe. Abaixo,
-                                    destacamos alguns dos nossos principais projetos, que exemplificam nosso compromisso
-                                    com a excelência e a inovação.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+          <div class="para-content five hide">
+            <h3>Agendamentos </h3>
+            <p>Desenvolvemos um sistema de agendamento de horários, projetado para simplificar a gestão de reservas e
+              melhorar a experiência dos clientes em barbearias.</p>
+            <ul>
+              <h4>Principais Caracteristicas:</h4>
+              <li><strong>Agendamento Online Fácil: </strong>Interface simples para que os clientes escolham o serviço,
+                horário e barbeiro preferido.</li>
+              <li><strong>Notificações Automáticas:</strong> Lembretes de agendamento por e-mail ou SMS para reduzir
+                faltas e atrasos.</li>
+              <li><strong>Painel de Controle do Barbeiro: </strong> Gerenciamento eficiente da agenda e visualização das
+                reservas em tempo real.</li>
+              <li><strong>Histórico de Clientes:</strong> Armazenamento de preferências e histórico de serviços para um
+                atendimento personalizado.</li>
+            </ul>
+            <h4>Resultados:</h4>
+            <p>A agenda digital melhorou a organização pessoal e profissional, aumentando a produtividade e otimizando a
+              gestão do tempo.</p>
+            <h4>Tecnologias Utilizadas:</h4>
+            <p>React Native, Firebase, Google Calendar API, Node.js</p>
+          </div>
 
+          <div class="para-content six hide">
+            <h3>Bot IA</h3>
+            <p>Desenvolvemos um bot de IA avançado para otimizar o atendimento ao cliente, oferecendo respostas rápidas
+              e precisas, além de suporte 24/7.</p>
+            <ul>
+              <h4>Principais Caracteristicas:</h4>
 
-        </section>
+              <li><strong>Respostas Instantâneas:</strong> O bot responde automaticamente às dúvidas mais comuns,
+                agilizando o atendimento.</li>
+              <li><strong>Aprendizado Contínuo:</strong> Alimentado por machine learning, o bot melhora suas respostas
+                com o tempo, tornando-se cada vez mais eficiente.</li>
+              <li><strong>Integração Multicanal: </strong>Funciona perfeitamente em diversas plataformas, como websites,
+                redes sociais e aplicativos de mensagem.</li>
+              <li><strong>Escalabilidade:</strong> Capaz de lidar com volumes crescentes de interações, sem comprometer
+                a qualidade do atendimento.</li>
+            </ul>
+            <h4>Resultados:</h4>
+            <p>O bot IA reduziu o tempo de resposta, aumentou a satisfação do cliente e liberou a equipe para focar em
+              tarefas mais complexas.</p>
+            <h4>Tecnologias Utilizadas:</h4>
+            <p>Python, TensorFlow, Dialogflow, APIs de Integração</p>
+          </div>
 
-
-        <section id="contato" class="vh-100 d-flex align-items-center">
-            <div class="container-fluid">
-                <div class="row mx-auto d-flex align-items-center">
-
-
-                    <!--Formulario-->
-
-                    <div class="col-lg-8 col-md-7 col-sm-10 col-10 mx-auto form-container" id="formulario">
-                        <h1 id="contate-nos" class="fw-normal text-center">CONTATE-NOS</h1>
-                        <p class="text-justify">Entre em contato conosco hoje mesmo para descobrir como podemos atender às suas necessidades
-                            de maneira eficaz e personalizada. Estamos ansiosos para ajudar a impulsionar o seu negócio
-                            para o próximo nível</p>
-                        <form action="https://formsubmit.co/juan654.pablo@gmail.com" method="post">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="NOME" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="E-MAIL" required>
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" id="mensagem" name="mensagem" rows="3" placeholder="DIGITE SUA MENSAGEM AQUI" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-50 mx-auto d-block rounded-pill">Enviar</button>
-                        </form>
-                    </div>
-                    
-
-
-                    <!--Informações-->
-
-                    <div class="col-lg-4 col-md-5 col-12 w-25 mx-auto" id="info">
-                        <h2 class="text-center">INFORMAÇÕES</h2>
-                        <div class="d-block">
-                            <div class="d-flex mt-5 mb-3">
-                                <i class="bi bi-envelope fs-3"></i>
-                                <p class="pt-2 ms-2">loguscompany@gmail.com</p>
-                            </div>
-                            <div class="d-flex  mb-3">
-                                <i class="bi bi-telephone fs-3"></i>
-                                <p class="pt-2 ms-2">+55 (11) 99263-7235</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="bi bi-clock fs-3"></i>
-                                <p class="pt-2 ms-2">9 ÁS 17 HORAS</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-    </main>
-
-
-
-
-
-
-    <footer class="footer">
-        <div class="logo">
-            <img src="FIles/logo-footer.jpg" alt="Logo" style="height: 50px;">
+          <img id="fotoOne" class="mid" src="assets/centro.jpg" alt="Imagem 1">
+          <img id="fotoTwo" class="mid hide" src="/assets/comerce.png" alt="Imagem 2">
+          <img id="fotoThree" class="mid hide" src="/assets/crm.png" alt="Imagem 3">
+          <img id="fotoFour" class="mid hide" src="/assets/gerenciamento.png" alt="Imagem 4">
+          <img id="fotoFive" class="mid hide" src="/assets/agenda.png" alt="Imagem 5">
+          <img id="fotoSix" class="mid hide" src="/assets/bot.png" alt="Imagem 6">
         </div>
 
-        <div class="copyright">
-            Copyright © 2024 by Logus Company. All rights reserved.
+      </div>
+
+      <div class="area-lateral-direita">
+        <div class="area-e"><img src="/assets/gerenciamento.png" alt="Imagem 4"></div>
+        <div class="area-f"><img src="/assets/agenda.png" alt="Imagem 5"></div>
+        <div class="area-g"><img src="/assets/bot.png" alt="Imagem 6"></div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper reveal" id="swip">
+      <h2>CRIANDO SOLUÇÕES PARA SEUS DESAFIOS! <br><span>NOSSOS PROJETOS EM AÇÃO</span></h2>
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/centro.jpg" alt="">
+          <div class="card">
+            <h3>Landing Page</h3>
+            <p>Desenvolvemos uma Landing Page impactante para capturar a essência da marca e maximizar conversões.</p>
+          </div>
         </div>
-
-
-        <div class="rede-social">
-            <a href="https://www.instagram.com/loguscompany?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                class="instagram" target="_blank">
-                <i class="fa-brands fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.linkedin.com/company/102953006/admin/feed/posts/" class="linkedin" target="_blank">
-                <i class="fa-brands fa-linkedin"></i> Linkedin
-            </a>
+        <div class="swiper-slide">
+          <img src="/assets/comerce.png" alt="">
+          <div class="card">
+            <h3>E-Commerce</h3>
+            <p>Criamos uma plataforma de E-commerce sob medida, projetada para impulsionar vendas e oferecer uma
+              experiência de compra fluida e intuitiva</p>
+          </div>
         </div>
+        <div class="swiper-slide">
+          <img src="assets/crm.png" alt="">
+          <div class="card">
+            <h3>CRM</h3>
+            <p>Criamos um sistema de CRM personalizado para ajudar pequenas empresas a gerenciar seus relacionamentos
+              com clientes de forma eficiente e organizada.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/assets/gerenciamento.png" alt="">
+          <div class="card">
+            <h3>Gerenciamento Financeiro</h3>
+            <p>Desenvolvemos um sistema de gestão financeira completo que facilita o controle de finanças pessoais e
+              empresariais, permitindo decisões financeiras mais inteligentes.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/agenda.png" alt="">
+          <div class="card">
+            <h3>Agendamento</h3>
+            <p>Desenvolvemos um sistema de agendamento de horários, projetado para simplificar a gestão de reservas e
+              melhorar a experiência dos clientes em barbearias.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/assets/bot.png" alt="">
+          <div class="card">
+            <h3>Chatbot IA </h3>
+            <p>Desenvolvemos um bot de IA avançado para otimizar o atendimento ao cliente, oferecendo respostas rápidas
+              e precisas, além de suporte 24/7. </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="sobre-nos reveal">
+      <div class="titulo">
+        <span class="titulo-principal">Nossa Jornada e Compromisso!</span>
+        <span class="subtitulo"><em>Sobre Nós</em></span>
+      </div>
+      <div class="abouts">
+        <p>Na <span class="logus-company">Logus Company</span>, <br> transformamos suas ideias em <br> soluções digitais
+          sob
+          medida. <br>
+          Criamos softwares <br> personalizados que resolvem <br> seus desafios, otimizam <br> processos e aceleram
+          resultados.</p>
+        <img src="assets/aboutOne.png" alt="Imagem de Desenvolvedores Trabalhando" class="sobre-imagem">
+      </div>
+
+      <span class="subtitulo"><em>Na Logus company, o seu sucesso é o nosso foco.</em></span>
 
 
+      <div class="abouts reversa">
+        <p>Com uma equipe ágil e <br> experiente, usamos as melhores <br> tecnologias para desenvolver <br> sistemas
+          intuitivos,
+          escaláveis e seguros. <br> Cada projeto é único, <br> e nosso foco é entregar exatamente o que você precisa
+          <br> para
+          impulsionar o seu negócio.
+        </p>
+        <img src="assets/aboutTwo.png" alt="Imagem de Equipe em Reunião" class="sobre-imagem">
+      </div>
+    </div>
+
+    <div class="form-contato reveal">
+      <div class="titulo">
+        <span class="titulo-principal">Vamos construir algo incrível!</span>
+        <span class="subtitulo"><em>Entre em contato</em></span>
+      </div>
+      <form id="contact-form">
+        <input type="text" name="user_name" placeholder="NOME / CORPORAÇÃO" required>
+        <input type="email" name="user_email" placeholder="E-MAIL PESSOAL OU CORPORATIVO" required>
+        <select name="category" required>
+          <option value="CONSULTORIA EM TECNOLOGIA">CONSULTORIA EM TECNOLOGIA</option>
+          <option value="MANUTENÇÃO E REPARO DE SOFTWARES">MANUTENÇÃO E REPARO DE SOFTWARES</option>
+          <option value="DESENVOLVIMENTO DE SOFTWARES PERSONALIZADOS">DESENVOLVIMENTO DE SOFTWARES PERSONALIZADOS
+          </option>
+        </select>
+        <textarea class="solicitacao" name="message" placeholder="SOLICITAÇÃO" required></textarea>
+        <button type="submit">ENVIAR</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>@ 2024 Logus Company. Todos Direitos Reservados</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/loguscompany/"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+            height="1em" viewBox="0 0 24 24">
+            <path fill="white"
+              d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a79 79 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465l-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78 78 0 0 1-2.189-.023l-.194-.006a63 63 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.771-1.153a4.9 4.9 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428l-.03-.712l-.005-.194A79 79 0 0 1 2 13.028v-2.056a79 79 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.9 4.9 0 0 1 3.68 3.678a4.9 4.9 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5" />
+          </svg></i></a>
+        <a href="https://www.linkedin.com/company/logus-company/"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+            height="1em" viewBox="0 0 24 24">
+            <path fill="white"
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
+          </svg></i></a>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+
 </body>
+<div>
+  <a href="https://wa.me/message/E2E2756QTNZUD1" target="_blank" class="float">
+    <img src="assets/whatsapp.svg" alt="whatsapp" width="50">
+  </a>
+  <div id="msg1">Fale conosco via WhatsApp</div>
+</div>
 
 </html>
