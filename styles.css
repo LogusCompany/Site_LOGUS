@@ -293,6 +293,7 @@ button {
   border: none;
   padding: 15px 30px;
   cursor: pointer;
+  color: white;
 }
 
 button:hover {
@@ -305,7 +306,6 @@ footer {
   border-top: 1px solid #d1d0d0;
   margin-top: 15rem;
 }
-
 footer .social-icons {
   margin-top: 10px;
 }
